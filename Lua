@@ -1,0 +1,641 @@
+local BLACKLISTED = {"kiklol4567", "SwazTucks", "kylobishop"}
+if player.Name == BLACKLISTED then
+    game.Players.LocalPlayer:Kick("NGIGERNIGGERNIGGERNIGGER")
+else
+if game.PlaceId == 12071150417 then -- TATAKAI REMASTERED
+wait(2.5) do
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Kraken Hub <3 -- Krakenツ#7569", "BloodTheme")
+    
+    
+    local Tab = Window:NewTab("Player") -- Main Section for player
+    local MainSection = Tab:NewSection("niko got a GYATTT ;)")
+        
+        
+    MainSection:NewButton("Infinite Yield", "pretty much admin commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+    
+    MainSection:NewButton("Auto Reroll (Legendary and higher)", "auto reroll must have rerolls", function()
+        local WHITELISTED = {"Hañma", "Songoku", "Kagutsuchi", "Sung", "Raijin", "Sanji", "Ryu", "Fujin", "Wu", "Kage", "Ohma", "Karu" ,"Akuma", "Mikazuchi", "Kure", "Kageyama"}
+    
+    while wait(0.150) do
+    if table.find(WHITELISTED, tostring(game.Players.LocalPlayer.PlayerGui.MainGui.StatusFrame["ClanName"].Text):split(" ")[2]) == nil then
+       game.ReplicatedStorage.Reroll:FireServer("BP")
+    else
+       break
+    end
+    end
+    end)
+
+    MainSection:NewButton("Join Smallest Server", "smaller server", function()
+        local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+function ListServers(cursor)
+   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+   return Http:JSONDecode(Raw)
+end
+
+local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[1]
+   Next = Servers.nextPageCursor
+until Server
+
+TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+    end)
+
+
+    local Tab = Window:NewTab("Foods") -- auto eat food 
+    local FoodSection = Tab:NewSection("niko is the best ong")
+
+    FoodSection:NewToggle("Ramen", "Auto eat ramen", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Ramen" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Ramen" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+
+    FoodSection:NewToggle("Burger", "Auto eat Burger", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Burger" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Burger" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+
+    FoodSection:NewToggle("Chicken", "black people food fr", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Chicken" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Chicken" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+    local xpSection = Tab:NewSection("auto exp foods")
+
+    xpSection:NewToggle("Protein Shakes", "auto drink Protien Shakes", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Protein Shake" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Protein Shake" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+    
+
+
+
+
+    local Tab = Window:NewTab("Auto Money Farm")
+    local MoneySection = Tab:NewSection("Swaz is a dumb boy")
+
+
+    MoneySection:NewButton("Auto Money -- Creds to Tora IsMe", "auto grind money", function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/ToraIsMe/ToraIsMe/main/0tatakai", true))()
+    end)
+
+
+
+    local Tab = Window:NewTab("Training") -- Auto Equip Training
+    local TrainingSection = Tab:NewSection("Tell Swaz to stop exploiting")
+    local TrainingSection = Tab:NewSection("Must have own auto clicker")
+    TrainingSection:NewToggle("Auto equip Pushups", "equip pushups", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Pushup Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Pushup Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+
+    TrainingSection:NewToggle("Auto equip Squats", "equip sqauts", function(state) -- auto equip Training
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Squat Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Squat Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+
+    TrainingSection:NewToggle("Auto equip situps", "equip sqauts", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Situp Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Situp Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+
+    TrainingSection:NewToggle("Auto equip jumping rope", "auto equip jumping rope", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Jumping Rope" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Jumping Rope" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+    
+    
+    local Tab = Window:NewTab("Auto Perfect Block")
+local AutoSection = Tab:NewSection("kyln ma bae <3")
+local AutoSection = Tab:NewSection("turn slider to 5 to disable")
+
+AutoSection:NewSlider("Auto PB", "kaboom", 12, 5, function(s)
+    if s < 6 then
+        local playerl = {}
+getgenv().Block = false
+getgenv().Distance = s
+
+task.spawn(function()
+while task.wait(0.1) do
+task.spawn(function()
+for i,v in pairs(game.Players:GetChildren()) do
+if v ~= game.Players.LocalPlayer and not table.find(playerl,v) then
+table.insert(playerl,v)
+task.spawn(function()
+v.ChildAdded:Connect(function(a)
+if (a.Name == "BlockBreakCD" or a.Name == "Combat") and getgenv().Block == true and game.Players.LocalPlayer:DistanceFromCharacter(v.Character.HumanoidRootPart.Position) <= getgenv().Distance then
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer("Block",game:GetService("Players").LocalPlayer.Character.LocalHandler.Blocking,true)
+task.wait(0.325)
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer("Block",game:GetService("Players").LocalPlayer.Character.LocalHandler.Blocking,false)
+end
+end)
+end)
+end
+end
+end)
+end
+end)
+else
+    local playerl = {}
+getgenv().Block = true
+getgenv().Distance = s
+
+task.spawn(function()
+while task.wait(0.1) do
+task.spawn(function()
+for i,v in pairs(game.Players:GetChildren()) do
+if v ~= game.Players.LocalPlayer and not table.find(playerl,v) then
+table.insert(playerl,v)
+task.spawn(function()
+v.ChildAdded:Connect(function(a)
+if (a.Name == "BlockBreakCD" or a.Name == "Combat") and getgenv().Block == true and game.Players.LocalPlayer:DistanceFromCharacter(v.Character.HumanoidRootPart.Position) <= getgenv().Distance then
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer("Block",game:GetService("Players").LocalPlayer.Character.LocalHandler.Blocking,true)
+task.wait(0.325)
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer("Block",game:GetService("Players").LocalPlayer.Character.LocalHandler.Blocking,false)
+end
+end)
+end)
+end
+end
+end)
+end
+end)
+end
+end)
+    
+    
+    local Tab = Window:NewTab("Styles") -- SpecialTrainer Styles
+    local StyleSection = Tab:NewSection("jerry is a lover fr")
+    
+    
+    StyleSection:NewButton("Formless (must have requirements)", "yas", function()
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Formless")
+    end)
+    
+    StyleSection:NewButton("Beast (must have requirements)", "mhm", function()
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Beast")
+    end)
+    
+    StyleSection:NewButton("Hitman (must have requirements and boxing)", "mhm", function()
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Hitman")
+    end)
+
+
+    StyleSection:NewButton("Sword (must have requirements and book,", "hehe", function()
+        game:GetService("ReplicatedStorage").RemoteEvent:FireServer("SpecialTrainer","Nito-Ganryu")
+    end)
+
+
+    local Tab = Window:NewTab("Auto Samurai Book") -- auto samurai book
+    local SamuraiSection = Tab:NewSection("Bishop is ma future bb mama")
+
+
+    SamuraiSection:NewButton("auto samurai", "dtb mine also", function()
+        local runTimeInSeconds = 3
+    
+    local endTime = os.time() + runTimeInSeconds
+    
+    getgenv().toggle = true
+    
+    while getgenv().toggle and os.time() < endTime do
+        task.wait()
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-1523, 49, -2661)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait()
+    pl.CFrame = location
+    end
+        local endTime = os.time() + runTimeInSeconds
+    
+    getgenv().toggle = true
+    
+    while getgenv().toggle and os.time() < endTime do
+        task.wait()
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(-2661, 49, -3946)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait()
+    pl.CFrame = location
+    end
+        local endTime = os.time() + runTimeInSeconds
+    
+    getgenv().toggle = true
+    
+    while getgenv().toggle and os.time() < endTime do
+        task.wait()
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+    local location = CFrame.new(2, 1000000, 2)
+    local humanoid = game.Players.LocalPlayer.Character.Humanoid
+    wait()
+    pl.CFrame = location
+    end
+end)
+
+local Tab = Window:NewTab("Ranked")
+local RankedSection = Tab:NewSection("niko my bae <3")
+
+RankedSection:NewButton("tp outta ranked in da air", "its on sight niko", function()
+    local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+local location = CFrame.new(3, 9999999, -2)
+local humanoid = game.Players.LocalPlayer.Character.Humanoid
+humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+wait (0.2)
+pl.CFrame = location
+end)
+local RankedSection = Tab:NewSection("they think its a glitch so they leave ez")
+        end
+    end
+
+if game.PlaceId == 13472926132 then -- ROADMAN ASHURA
+wait(2.5) do
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Kraken Hub <3 -- Krakenツ#7569", "BloodTheme")
+    
+    
+    local Tab = Window:NewTab("Player") -- Main Section for player
+    local MainSection = Tab:NewSection("niko got a GYATTT ;)")
+
+    MainSection:NewButton("Infinite Yield", "admin commands", function()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'),true))()
+    end)
+
+    MainSection:NewButton("Join smallest server", "hehe", function()
+        local Http = game:GetService("HttpService")
+local TPS = game:GetService("TeleportService")
+local Api = "https://games.roblox.com/v1/games/"
+
+local _place = game.PlaceId
+local _servers = Api.._place.."/servers/Public?sortOrder=Asc&limit=100"
+function ListServers(cursor)
+   local Raw = game:HttpGet(_servers .. ((cursor and "&cursor="..cursor) or ""))
+   return Http:JSONDecode(Raw)
+end
+
+local Server, Next; repeat
+   local Servers = ListServers(Next)
+   Server = Servers.data[1]
+   Next = Servers.nextPageCursor
+until Server
+
+TPS:TeleportToPlaceInstance(_place,Server.id,game.Players.LocalPlayer)
+    end)
+
+    MainSection:NewButton("AutoClicker", "dwdwdwwdwddwwdwd", function()
+        local runService = game:GetService("RunService")
+local userInputService = game:GetService("UserInputService")
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+local autoclickerEnabled = false
+local clickInterval = 0.1 -- Time between each click (in seconds)
+
+-- Function to simulate a mouse click
+local function clickMouse()
+    mouse1click()
+end
+
+-- Function to toggle the autoclicker on/off
+local function toggleAutoclicker()
+    autoclickerEnabled = not autoclickerEnabled
+end
+
+-- Event listener for when the "E" key is pressed
+userInputService.InputBegan:Connect(function(input)
+    if input.KeyCode == Enum.KeyCode.V then
+        toggleAutoclicker()
+    end
+end)
+
+-- Main autoclicker loop
+runService.Heartbeat:Connect(function()
+    if autoclickerEnabled then
+        clickMouse()
+        wait(clickInterval)
+    end
+end)
+wait(1) -- letting them know about pressing v to toggle
+game.StarterGui:SetCore("SendNotification", {
+Title = "monkey";
+Text = "press v to toggle on and off";
+Icon = "rbxassetid://10182334140";
+Duration = 10;
+})
+    end)
+
+
+    local Tab = Window:NewTab("tps") -- tp Section for player
+    local tpSection = Tab:NewSection("swaz got a GYAT")
+
+    tpSection:NewButton("tp to hot springs", "hehe", function()
+        local CFrameEnd = CFrame.new(-2010, 501, 697)
+local Time = 1 -- Time in seconds
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+    end)
+
+
+    tpSection:NewButton("tp to pbr gym", "hehe", function()
+        local CFrameEnd = CFrame.new(-190, 487, -504)
+local Time = 1 -- Time in seconds
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+    end)
+
+    tpSection:NewButton("tp to atm", "yeah", function()
+        local CFrameEnd = CFrame.new(-234, 488, 750)
+local Time = 1 -- Time in seconds
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+    end)
+
+    tpSection:NewButton("tp to food mart", "hehe", function()
+        local CFrameEnd = CFrame.new(-703, 487, 539)
+local Time = 1 -- Time in seconds
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+    end)
+
+    tpSection:NewButton("tp to donut paradise", "hehe", function()
+        local CFrameEnd = CFrame.new(-90, 488, 23)
+local Time = 1 -- Time in seconds
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+    end)
+
+    tpSection:NewButton("tp to lethwei gym", "yeah", function()
+        local CFrameEnd = CFrame.new(589, 513, -802)
+local Time = 1 -- Time in seconds
+local tween =  game:GetService("TweenService"):Create(game.Players.LocalPlayer.Character.HumanoidRootPart, TweenInfo.new(Time), {CFrame = CFrameEnd})
+tween:Play()
+tween.Completed:Wait()
+    end)
+
+    local Tab = Window:NewTab("Auto Money Farm")
+    local moneySection = Tab:NewSection("create a macro where you keep on clicking")
+    local moneySection = Tab:NewSection("on the job board")
+
+    local Tab = Window:NewTab("Macros")
+    local MacroSection = Tab:NewSection("bishop is mine")
+
+
+    MainSection:NewButton("tp to springs when 65 or higher Fatigue", "hehe", function()
+        repeat
+            wait()
+        until tonumber(game.Players.LocalPlayer.PlayerGui.HUD.Fullsize.Fatigue.Text:sub(1, -2)) >= 65
+        
+        local pl = game.Players.LocalPlayer.Character.HumanoidRootPart
+        local location = CFrame.new(-2010, 501, 697)
+        local humanoid = game.Players.LocalPlayer.Character.Humanoid
+        wait()
+        pl.CFrame = location
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA"Tool" then
+                 v.Parent = game.Players.LocalPlayer.Backpack;
+            end;
+       end;
+    end)
+
+    MacroSection:NewToggle("Auto equip Squats", "equip sqauts", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Squat" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Squat" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+    MacroSection:NewToggle("Auto equip Res training", "equip sqauts", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Res Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Res Training" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+    MacroSection:NewToggle("Auto equip Pushups", "equip sqauts", function(state)
+        if state then
+            getgenv().toggle = true;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Pushup" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        else
+            getgenv().toggle = false;
+while getgenv().toggle do task.wait()
+    for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+        if v.name == "Pushup" then
+            v.Parent = game.Players.LocalPlayer.Character
+        end
+    end
+end
+        end
+    end)
+
+end
+end
+do
+    wait(1) -- ty for kraken hub payment
+            game.StarterGui:SetCore("SendNotification", {
+            Title = "ty for buying Kraken Hub";
+            Text = "if there are any bugs, please report them in #bug-reports";
+            Icon = "rbxassetid://10182334140";
+            Duration = 10;
+            })
+            end
+    
+    
+        do
+            wait(1) --people that helped
+            game.StarterGui:SetCore("SendNotification", {
+            Title = "people that helped";
+            Text = "Leesvilleツ#4588 and Swaz#2247";
+            Icon = "rbxassetid://10182334140";
+            Duration = 10;
+            })
+            end
+        end
